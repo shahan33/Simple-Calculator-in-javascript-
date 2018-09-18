@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet"  href="style1.css">-->
+    <link href="style1.css" type="text/css" rel="stylesheet">
+   
+
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+    <h4>Calculator</h4>
+    </div>
+    </div>
+    </div>
+    
+    <div class="container" class="form1">
+            
+       
+          <tr><form name=calcu>
+               
+                    
+                        <td>
+                            <input type="text" class="text1" name=text1><br><br>
+                        </td>
+                      
+                    </tr>
+
+                <tr> 
+                    <td><input type="button" name=btn7 value="7" onclick="calcu.text1.value +='7'"></td>
+                    <td><input type="button" name=btn8 value=8 onclick="calcu.text1.value +='8'"></td>
+                    <td><input type="button" name=btn9 value=9 onclick="calcu.text1.value +='9'"></td>
+                    <td><input type="button" name=divide  value=/ onclick="calcu.text1.value +='/'"></td><br><br>
+                </tr>
+
+
+                <tr>
+                    <td><input type="button" name=btn4 value=4 onclick="calcu.text1.value +='4'"></td>
+                    <td><input type="button" name=btn5 value=5 onclick="calcu.text1.value +='5'"></td>
+                    <td><input type="button" name=btn6 value=6 onclick="calcu.text1.value +='6'"></td>
+                    <td><input type="button" name=multiply value=* onclick="calcu.text1.value +='*'"></td>
+                    <br><br>
+               </tr>
+
+
+               <tr>
+                        <td><input type="button" name=btn1 value=1 onclick="calcu.text1.value +='1'"></td>
+                        <td><input type="button" name=btn2 value=2 onclick="calcu.text1.value +='2'"></td>
+                        <td><input type="button" name=btn3 value=3 onclick="calcu.text1.value +='3'"></td>
+                        <td><input type="button" name=- value=- onclick="calcu.text1.value +='-'"></td>
+                        <br><br>
+               </tr>
+
+
+               <tr>
+                        <td><input type="button" name=btn0 value=0 onclick="calcu.text1.value +='0'"></td>
+                        <td><input type="button" name=btndot value=. onclick="calcu.text1.value +='.'"></td>
+                        <td><input type="button" name= plus value=+ onclick="calcu.text1.value +='+'"></td>
+                        <td><input type="button" name=equal value='=' onclick="calcu.text1.value=eval(calcu.text1.value)"><br><br></td>
+              </tr>
+              
+              
+              <input type='button' value="Clear ALL" onclick="calcu.text1.value=' '" id='clear'/>
+          
+           </table>
+          </form>
+           </div>
+            </div>
+            </div>
+<!--<script src=""></script>-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>
